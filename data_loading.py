@@ -11,3 +11,4 @@ def dataLoading(path):
 def labelencoding(y):
     le = LabelEncoder()
     y = le.fit_transform(y)
+    return y
