@@ -32,7 +32,7 @@ def predict(text):
     x = cv.transform([text]).toarray() 
     lang = model.predict(x)
     lang = le.inverse_transform(lang)
-    print("The langauge is in",lang[0]) 
+    print("The langauge is in: ",lang[0]) 
     return lang[0]
 
 # predict('People are awesome')
